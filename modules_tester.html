@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>An other javascript modules approach</title>
+        <script type="text/javascript" src="serenix_module.js"></script>
+        <script type="text/javascript" src="module1.js"></script>
+        <script type="text/javascript" src="module2.js"></script>
+        <script type="text/javascript" src="externals/module3.js"></script>
+        <script type="text/javascript" src="externals/math/base.js"></script>
+    </head>
+    <body>
+        <h3>An other javascript modules approach</h3>
+        <script type="text/javascript">
+            modules.import("User", "externals/module3", "bank");
+            
+            var user = new bank.User("makao", "Marc KAMGA Olivier");
+            console.log('----------------------------------------------------------------------------------');
+            console.log('var user = new bank.User("makao", "Marc KAMGA Olivier") => ' + user.toString());
+            var pkg = {};
+            modules.import("User", "externals/module3", pkg);
+            var user2 = new pkg.User("kamol", "KAMGA Marc Olivier", "%$Myt&fECyu@k#rh9513?Z");
+            console.log('var user2 = new pkg.User("kamol", "KAMGA Marc Olivier", "%$Myt&fECyu@k#rh9513?Z") => ' + user2.toString());
+            
+            
+        </script>
+    </body>
+</html>
