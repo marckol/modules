@@ -1,3 +1,4 @@
+//Import all variables (fields) and functions(methods) of the module3 in global variable ext
 modules.import('*', 'module2.js', 'ext');
 
 function N() {
