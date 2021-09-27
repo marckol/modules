@@ -115,6 +115,7 @@ c.prototype.toString = function() {
     return (this._login||"") + "[" + this._name + ":" + (this._password||"") + "]";
 };
 
+//Export the class c (anonymous function) with the name 'User' in module3
 modules.export(c);
 
 
