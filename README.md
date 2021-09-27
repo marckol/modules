@@ -1,2 +1,2 @@
 # modules
-An other library and approach to manage modules in javascript
+A javascript library/approach to manage modules in javascript with no dependency
